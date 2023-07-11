@@ -27,7 +27,7 @@ const GifList = () => {
   };
 
   return (
-    <div className="Gif-list">
+    <div>
       <form onSubmit={handleSubmit}>
         <label>
           <input
@@ -40,15 +40,18 @@ const GifList = () => {
         </label>
         <button type="submit">Submit</button>
       </form>
-      {listOfGifs.map((gif) => {
-        return (
-          <GifCard
-            key={gif.id}
-            title={gif.title}
-            imgUrl={gif.images.original.url}
-          />
-        );
-      })}
+
+      <div className="Gif-list">
+        {listOfGifs.map((gif) => {
+          return (
+            <GifCard
+              key={gif.id}
+              title={gif.title}
+              imgUrl={gif.images.original.url}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -59,65 +59,17 @@ button:hover {
     #ff3300,
     #099fff
   );
-  background-size: 400%;
+  background-size: 500%;
   width: auto;
   height: auto;
   z-index: -1;
-  animation: animate 20s linear infinite;
+  animation: animate 15s linear infinite;
 }
 
 button:hover::after {
   filter: blur(40px);
+  opacity: 0.99;
 }
-
-/*button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 0.8em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #e2e2e2;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  margin-top: 10px;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-button:hover::before,
-button:hover::after {
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(
-    45deg,
-    #e6fb04,
-    #ff6600,
-    #00ff66,
-    #00ffff,
-    #ff00ff,
-    #ff0099,
-    #6e0dd0,
-    #ff3300,
-    #099fff
-  );
-  background-size: 400%;
-  width: calc(50% + 10px);
-  height: calc(50% + 10px);
-  z-index: -1;
-  animation: animate 20s linear infinite;
-}
-
-button:hover::after {
-  filter: blur(40px);
-} */
 
 #input-box {
   height: 25px;

@@ -1,5 +1,4 @@
 const GifCard = ({ title, imgUrl }) => {
-  console.log(imgUrl);
   return (
     <div>
       <p>{title}</p>

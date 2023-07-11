@@ -4,7 +4,7 @@ import axios from "axios";
 
 const GifList = () => {
   const [listOfGifs, setListOfGifs] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("cats");
+  const [searchTerm, setSearchTerm] = useState("");
   const [newSearchTerm, setNewSearchTerm] = useState("");
 
   useEffect(() => {
@@ -31,7 +31,8 @@ const GifList = () => {
       <form onSubmit={handleSubmit}>
         <label>
           <input
-            placeholder="Find me..."
+            id="input-box"
+            placeholder="Search all GIFs..."
             type="text"
             value={searchTerm}
             onChange={handleChange}
